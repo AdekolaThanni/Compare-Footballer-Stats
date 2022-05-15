@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Players</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- Initial state -->
+    <div class="container">
+        <div class="container__box container__box--1">
+            <img src="images/avatar.png" alt="" class="avatar__img avatar--1">
+            <!-- Final state of image -->
+            <!-- <img src="https://media.api-sports.io/football/players/276.png" alt="image" class="avatar__img"> -->
+            <form action="" class="container__form">
+                <select name="League" id="league-1">
+                    <option class="options" value="none" selected hidden disabled>Select league...</option>
+                    <option class="options" value="39">Premier League</option>
+                    <option class="options" value="140">La liga</option>
+                    <option class="options" value="78">Bundesliga</option>
+                    <option class="options" value="135">Serie A</option>
+                    <option class="options" value="61">Ligue 1</option>
+                </select>
+                <select name="Team" id="team-1">
+                    <option class="options" value="none" disabled hidden selected>Select team...</option>
+                </select>
+                <select name="Player" id="player-1">
+                    <option class="options" value="none" selected disabled hidden>Select player...</option>
+                </select>
+            </form>
+            
+        </div>
+        <select name="year" id="year">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+        </select>
+        <div class="container__box container__box--2">
+            <img src="images/avatar.png" alt="" class="avatar__img avatar--2">
+            <form action="" class="container__form">
+                <select name="League" id="league-2">
+                    <option class="options" value="none" selected hidden disabled>Select league..</option>
+                    <option class="options" value="39">Premier League</option>
+                    <option class="options" value="140">La liga</option>
+                    <option class="options" value="78">Bundesliga</option>
+                    <option class="options" value="135">Serie A</option>
+                    <option class="options" value="61">Ligue 1</option>
+                </select>
+                <select name="Team" id="team-2">
+                    <option class="options" value="none" disabled hidden selected>Select team...</option>
+                </select>
+                <select name="Player" id="player-2">
+                    <option class="options" value="none" selected disabled hidden>Select player...</option>
+                </select>
+            </form>
+        </div>
+        <button class="btn compare-btn" disabled>Compare</button>
+    </div>
+    <!-- Compare state -->
+    <ul class="list list--details display">
+        <h3 class="list__header">Details</h3>
+        <!-- Final state of list detail -->
+        <!-- <li class="list__item">
+            <span class="detail--1">Ronaldo</span>
+            <span class="detail--item">Name</span>
+            <span class="detail--2">Messi</span>
+        </li> -->
+    </ul>
+    <ul class="list list--stat display">
+        <h3 class="list__header">Statistics</h3>
+        <!-- Final state of statistics -->
+        <!-- <li class="list__item list__item--stat">
+            <span class="stat--1">500</span>
+            <span class="stat--item">Matches Played</span>
+            <span class="stat--2">750</span>
+            <span class="stat--divider"></span>
+        </li> -->
+    </ul>
+    <button class="btn btn-reset display">Reset</button>
+</body>
+</html>
